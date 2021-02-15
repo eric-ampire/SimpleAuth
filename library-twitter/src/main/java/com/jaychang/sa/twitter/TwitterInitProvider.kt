@@ -24,7 +24,7 @@ class TwitterInitProvider : ContentProvider() {
   }
 
   override fun onCreate(): Boolean {
-    initTwitter(context.applicationContext)
+    initTwitter(context!!.applicationContext)
     return false
   }
 

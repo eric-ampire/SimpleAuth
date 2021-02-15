@@ -15,12 +15,12 @@ class FacebookInitProvider : ContentProvider() {
     if (facebookAppId != null && facebookAppId.isNotEmpty()) {
       FacebookSdk.setApplicationId(facebookAppId)
       FacebookSdk.sdkInitialize(context)
-      FacebookSdk.setWebDialogTheme(android.R.style.Theme_Holo_Light_NoActionBar)
+      //FacebookSdk.setWebDialogTheme(android.R.style.Theme_Holo_Light_NoActionBar)
     }
   }
 
   override fun onCreate(): Boolean {
-    initFacebook(context.applicationContext)
+    initFacebook(context!!.applicationContext)
     return false
   }
 

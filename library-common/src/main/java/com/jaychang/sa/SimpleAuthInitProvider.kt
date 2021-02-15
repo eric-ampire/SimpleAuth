@@ -8,7 +8,7 @@ import android.net.Uri
 class SimpleAuthInitProvider : ContentProvider() {
 
   override fun onCreate(): Boolean {
-    Initializer.context = context.applicationContext
+    Initializer.context = context!!.applicationContext
     return false
   }
 

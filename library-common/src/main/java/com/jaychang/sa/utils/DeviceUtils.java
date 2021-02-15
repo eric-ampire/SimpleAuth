@@ -18,8 +18,8 @@ import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Environment;
 import android.provider.Settings;
-import android.support.annotation.RequiresPermission;
-import android.support.annotation.StringRes;
+import androidx.annotation.RequiresPermission;
+import androidx.annotation.StringRes;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 

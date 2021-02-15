@@ -12,6 +12,10 @@ buildscript {
 }
 
 android {
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
     compileSdkVersion deps.build.compileSdkVersion
     buildToolsVersion deps.build.buildToolsVersion
     defaultConfig {
@@ -33,13 +37,13 @@ android {
 }
 
 android.defaultConfig.manifestPlaceholders = [
-    facebookAppId        : "your facebook app id",
-    googleWebClientId    : "your google web client id",
-    twitterConsumerKey   : "your twitter consumer key",
-    twitterConsumerSecret: "your twitter consumer secret",
-    instagramClientId    : "your instagram client id",
-    instagramClientSecret: "your instagram client secret",
-    instagramRedirectUrl : "your instagram redirect url"
+    facebookAppId         : "your facebook app id",
+    googleWebClientId     : "your google web client id",
+    twitterConsumerKey    : "sWVeBRxYNQlhr5CP0ISIxg9Ld",
+    twitterConsumerSecret : "RSyimg4kBY0KSaOIfA7LFoqd9153UaHI19Vbtqv3VQ8I4iugEr",
+    instagramClientId     : "your instagram client id",
+    instagramClientSecret : "your instagram client secret",
+    instagramRedirectUrl  : "your instagram redirect url"
 ]
 
 dependencies {
